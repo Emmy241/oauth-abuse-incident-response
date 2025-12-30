@@ -109,7 +109,6 @@ T3 Token reused from new IP
 T4 Protected data accessed
 T5 Detection triggers
 
-
 ---
 
 ## MITRE ATT&CK Mapping
@@ -117,27 +116,5 @@ T5 Detection triggers
 - **Technique:** Valid Accounts – Token Abuse  
 - **Tactic:** Credential Access / Defense Evasion  
 
----
 
-## Diagrams & Visuals
-
-- **High-Level OAuth Abuse Flow:**  
-
-[ User ]
-|
-| OAuth Login
-v
-[ OAuth Provider ]
-|
-| Access Token Issued
-v
-[ Client App ]
-|
-| Token Exposure (Logs)
-v
-[ Attacker ]
-|
-| Reuses Token
-v
-[ Protected API ]
 
