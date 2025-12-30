@@ -19,3 +19,6 @@ pip install flask==3.0.0 requests==2.31.0
 python app.py
 
 4. Use a browser or `curl` to simulate OAuth login and token retrieval.
+
+curl -H "Authorization: Bearer <REDACTED_TOKEN>" \
+https://www.googleapis.com/oauth2/v1/userinfo
