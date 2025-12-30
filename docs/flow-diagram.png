@@ -1,0 +1,28 @@
+            ┌─────────────┐
+            │   User      │
+            │(Legitimate) │
+            └─────┬───────┘
+                  │ OAuth Login
+                  ▼
+            ┌─────────────┐
+            │ OAuth Server│
+            │ (Token Issuer) │
+            └─────┬───────┘
+                  │ Access Token
+                  ▼
+            ┌─────────────┐
+            │ Client App  │
+            │ (Web/Flask) │
+            └─────┬───────┘
+                  │ Token exposed (logs, debug, etc.)
+                  ▼
+            ┌─────────────┐
+            │  Attacker   │
+            │ (Steals & Reuses Token) │
+            └─────┬───────┘
+                  │ API Requests with Stolen Token
+                  ▼
+            ┌─────────────┐
+            │ Protected   │
+            │ API / Data  │
+            └─────────────┘
